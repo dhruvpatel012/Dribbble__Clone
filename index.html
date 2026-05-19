@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dribbble Clone</title>
+
+    <!-- Remix Icon -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="header">
+
+        <!-- Logo -->
+
+        <div class="logo">
+            <img src="./assets/dribbble_logo.webp" alt="dribbble_logo">
+        </div>
+
+
+
+        <!-- Checkbox -->
+
+        <input type="checkbox" id="menuToggle">
+
+
+        <!-- Hamburger -->
+
+        <label for="menuToggle" class="hamburger">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </label>
+
+
+        <!-- NAV -->
+
+        <nav class="navbar">
+
+            <a href="#">Explore <i class="ri-arrow-down-s-line"></i></a>
+
+            <a href="#hireadesigner">Hire a Designer <i class="ri-arrow-down-s-line"></i></a>
+
+            <a href="#">Find Jobs</a>
+
+            <a href="#blog">Blog</a>
+
+
+
+            <!-- Mobile Buttons -->
+
+            <div class="mobileButtons">
+
+                <button class="signBtn">Sign up</button>
+
+                <button class="loginBtn">Log in</button>
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- Desktop Buttons -->
+
+        <div class="navBtn">
+
+            <button class="signBtn">Sign up</button>
+
+            <button class="loginBtn">Log in</button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- HERO SECTION -->
+
+    <section class="heroSection">
+
+        <div class="heroContent">
+
+            <h1>Discover the world's <br> top designers</h1>
+
+            <p class="movingText">Explore work from the most talented and accomplished designers ready to take on your
+                next project</p>
+
+        </div>
+
+
+
+        <!-- SEARCH -->
+
+        <div class="searchBox">
+
+            <input type="text" placeholder="What are you looking for?">
+
+            <div class="searchRight">
+
+                <span>Shots</span>
+
+                <i class="ri-arrow-down-s-line"></i>
+
+                <button><i class="ri-search-line"></i></button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- TRENDING -->
+
+        <div class="trending">
+
+            <span>Trending searches</span>
+
+            <button>landing page</button>
+            <button>e-commerce</button>
+            <button>mobile app</button>
+            <button>logo design</button>
+            <button>dashboard</button>
+            <button>icons</button>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- FILTER SECTION -->
+
+    <section class="filterSection">
+
+        <!-- LEFT -->
+
+        <div class="filterLeft">
+
+            <button class="popularBtn">Popular <i class="ri-arrow-down-s-line"></i></button>
+
+        </div>
+
+        <!-- CENTER -->
+
+        <div class="categoryButtons">
+
+            <button class="activeBtn">Discover</button>
+            <button>Animation</button>
+            <button>Branding</button>
+            <button>Illustration</button>
+            <button>Mobile</button>
+            <button>Print</button>
+            <button>Typography</button>
+            <button>Web Design</button>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="filterRight">
+
+            <button class="filterBtn"><i class="ri-equalizer-line"></i> Filters</button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CARD SECTION -->
+
+    <section class="cardSection" id="hireadesigner">
+
+        <div class="cardGrid">
+
+            <!-- CARD-1 -->
+
+            <article class="card">
+
+                <div class="cardImage">
+
+                    <img src="./assets/phone.webp" alt="UI Design">
+
+                    <div class="overlay">
+
+                        <div class="overlayContent">
+
+                            <h3>Fitness and step coun..</h3>
+
+                            <div class="overlayIcons">
+
+                                <button>
+                                    <i class="ri-heart-3-line"></i>
+                                </button>
+
+                                <button>
+                                    <i class="ri-bookmark-line"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="cardBottom">
+
+                    <div class="profile">
+
+                        <img src="./assets/img1.webp" alt="Designer">
+
+                        <h4>Upnow Studio</h4>
+
+                        <span>PRO</span>
+
+                    </div>
+
+
+
+                    <div class="stats">
+
+                        <span><i class="ri-heart-3-line"></i> 31</span>
+
+                        <span><i class="ri-eye-line"></i> 6.6k</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+
+
+            <!-- CARD-2 -->
+
+            <article class="card">
+
+                <div class="cardImage">
+
+                    <video src="./assets/video.mp4" loop muted autoplay style="width: 100%;"></video>
+
+                    <div class="overlay">
+
+                        <div class="overlayContent">
+
+                            <h3>Hero 3D and Anima...</h3>
+
+                            <div class="overlayIcons">
+
+                                <button>
+                                    <i class="ri-heart-3-line"></i>
+                                </button>
+
+                                <button>
+                                    <i class="ri-bookmark-line"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="cardBottom">
+
+                    <div class="profile">
+
+                        <img src="./assets/img2.webp" alt="Designer">
+
+                        <h4>Fancy Team</h4>
+
+                        <span>PRO</span>
+
+                    </div>
+
+
+
+                    <div class="stats">
+
+                        <span><i class="ri-heart-3-line"></i> 31</span>
+
+                        <span><i class="ri-eye-line"></i> 6.6k</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+
+
+            <!-- CARD-3 -->
+
+            <article class="card">
+
+                <div class="cardImage">
+
+                    <img src="./assets/stock.webp" alt="Analytics">
+
+                    <div class="overlay">
+
+                        <div class="overlayContent">
+
+                            <h3>Liverage Crypto trading...</h3>
+
+                            <div class="overlayIcons">
+
+                                <button>
+                                    <i class="ri-heart-3-line"></i>
+                                </button>
+
+                                <button>
+                                    <i class="ri-bookmark-line"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="cardBottom">
+
+                    <div class="profile">
+
+                        <img src="./assets/img3.webp" alt="Designer">
+
+                        <h4>Extej UI</h4>
+
+                        <span>PRO</span>
+
+                    </div>
+
+
+
+                    <div class="stats">
+
+                        <span><i class="ri-heart-3-line"></i> 31</span>
+
+                        <span><i class="ri-eye-line"></i> 6.6k</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+
+
+            <!-- CARD-4 -->
+
+            <article class="card">
+
+                <div class="cardImage">
+
+                    <img src="./assets/plexo.webp" alt="Crypto UI">
+
+                    <div class="overlay">
+
+                        <div class="overlayContent">
+
+                            <h3>Plexo</h3>
+
+                            <div class="overlayIcons">
+
+                                <button>
+                                    <i class="ri-heart-3-line"></i>
+                                </button>
+
+                                <button>
+                                    <i class="ri-bookmark-line"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="cardBottom">
+
+                    <div class="profile">
+
+                        <img src="./assets/img4.webp" alt="Designer">
+
+                        <h4>Emote</h4>
+
+                        <span>PRO</span>
+
+                    </div>
+
+
+
+                    <div class="stats">
+
+                        <span><i class="ri-heart-3-line"></i> 31</span>
+
+                        <span><i class="ri-eye-line"></i></span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- CARD-5 -->
+
+            <article class="card">
+
+                <div class="cardImage">
+
+                    <img src="./assets/altecho.webp" alt="Crypto UI">
+
+                    <div class="overlay">
+
+                        <div class="overlayContent">
+
+                            <h3>Altecho-Webdesign</h3>
+
+                            <div class="overlayIcons">
+
+                                <button>
+                                    <i class="ri-heart-3-line"></i>
+                                </button>
+
+                                <button>
+                                    <i class="ri-bookmark-line"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="cardBottom">
+
+                    <div class="profile">
+
+                        <img src="./assets/img5.webp" alt="Designer">
+
+                        <h4>Victa Ville</h4>
+
+                        <span>PRO</span>
+
+                    </div>
+
+
+
+                    <div class="stats">
+
+                        <span><i class="ri-heart-3-line"></i> 31</span>
+
+                        <span><i class="ri-eye-line"></i></span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- CARD-6 -->
+
+            <article class="card">
+
+                <div class="cardImage">
+
+                    <img src="./assets/agency.webp" alt="Crypto UI">
+
+                    <div class="overlay">
+
+                        <div class="overlayContent">
+
+                            <h3>Fitness and step coun..</h3>
+
+                            <div class="overlayIcons">
+
+                                <button>
+                                    <i class="ri-heart-3-line"></i>
+                                </button>
+
+                                <button>
+                                    <i class="ri-bookmark-line"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="cardBottom">
+
+                    <div class="profile">
+
+                        <img src="./assets/img6.webp" alt="Designer">
+
+                        <h4>Bonsai</h4>
+
+                        <span>PRO</span>
+
+                    </div>
+
+
+
+                    <div class="stats">
+
+                        <span><i class="ri-heart-3-line"></i> 31</span>
+
+                        <span><i class="ri-eye-line"></i> 6.6k</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- CARD-7 -->
+
+            <article class="card">
+
+                <div class="cardImage">
+
+                    <img src="./assets/falcon.webp" alt="Crypto UI">
+
+                    <div class="overlay">
+
+                        <div class="overlayContent">
+
+                            <h3>Doverange.</h3>
+
+                            <div class="overlayIcons">
+
+                                <button>
+                                    <i class="ri-heart-3-line"></i>
+                                </button>
+
+                                <button>
+                                    <i class="ri-bookmark-line"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="cardBottom">
+
+                    <div class="profile">
+
+                        <img src="./assets/img7.webp" alt="Designer">
+
+                        <h4>Type08(alen pavlovic)</h4>
+
+                        <span>PRO</span>
+
+                    </div>
+
+
+
+                    <div class="stats">
+
+                        <span><i class="ri-heart-3-line"></i> 31</span>
+
+                        <span><i class="ri-eye-line"></i> 6.6k</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD-8 -->
+
+            <article class="card">
+
+                <div class="cardImage">
+
+                    <img src="./assets/iphone.webp" alt="Crypto UI">
+
+                    <div class="overlay">
+
+                        <div class="overlayContent">
+
+                            <h3>Financial Mobile App</h3>
+
+                            <div class="overlayIcons">
+
+                                <button>
+                                    <i class="ri-heart-3-line"></i>
+                                </button>
+
+                                <button>
+                                    <i class="ri-bookmark-line"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="cardBottom">
+
+                    <div class="profile">
+
+                        <img src="./assets/img8.webp" alt="Designer">
+
+                        <h4>Ronus IT|UI UX Tec..</h4>
+
+                        <span>PRO</span>
+
+                    </div>
+
+
+
+                    <div class="stats">
+
+                        <span>
+                            <i class="ri-heart-3-line"></i>
+                            31
+                        </span>
+
+                        <span>
+                            <i class="ri-eye-line"></i>
+                            6.6k
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD-9 -->
+
+            <article class="card">
+
+                <div class="cardImage">
+
+                    <img src="./assets/finance.webp" alt="Crypto UI">
+
+                    <div class="overlay">
+
+                        <div class="overlayContent">
+
+                            <h3>Animated Landing Page....</h3>
+
+                            <div class="overlayIcons">
+
+                                <button>
+                                    <i class="ri-heart-3-line"></i>
+                                </button>
+
+                                <button>
+                                    <i class="ri-bookmark-line"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="cardBottom">
+
+                    <div class="profile">
+
+                        <img src="./assets/img9.webp" alt="Designer">
+
+                        <h4>Bato</h4>
+
+                        <span>PRO</span>
+
+                    </div>
+
+
+
+                    <div class="stats">
+
+                        <span><i class="ri-heart-3-line"></i> 31</span>
+
+                        <span><i class="ri-eye-line"></i> 6.6k</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- CARD-10 -->
+
+            <article class="card">
+
+                <div class="cardImage">
+
+                    <img src="./assets/flonecek.webp" alt="Crypto UI">
+
+                    <div class="overlay">
+
+                        <div class="overlayContent">
+
+                            <h3>Finanace Logo</h3>
+
+                            <div class="overlayIcons">
+
+                                <button>
+                                    <i class="ri-heart-3-line"></i>
+                                </button>
+
+                                <button>
+                                    <i class="ri-bookmark-line"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="cardBottom">
+
+                    <div class="profile">
+
+                        <img src="./assets/img10.webp" alt="Designer">
+
+                        <h4>Jovel Ahmed</h4>
+
+                        <span>PRO</span>
+
+                    </div>
+
+
+
+                    <div class="stats">
+
+                        <span><i class="ri-heart-3-line"></i> 31</span>
+
+                        <span><i class="ri-eye-line"></i> 6.6k</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- CARD-11 -->
+
+            <article class="card">
+
+                <div class="cardImage">
+
+                    <img src="./assets/animal.webp" alt="Crypto UI">
+
+                    <div class="overlay">
+
+                        <div class="overlayContent">
+
+                            <h3>Rapid Rabbit Logo</h3>
+
+                            <div class="overlayIcons">
+
+                                <button>
+                                    <i class="ri-heart-3-line"></i>
+                                </button>
+
+                                <button>
+                                    <i class="ri-bookmark-line"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="cardBottom">
+
+                    <div class="profile">
+
+                        <img src="./assets/img11.webp" alt="Designer">
+
+                        <h4>Levi Lowell</h4>
+
+                        <span>PRO</span>
+
+                    </div>
+
+
+
+                    <div class="stats">
+
+                        <span><i class="ri-heart-3-line"></i> 31</span>
+
+                        <span><i class="ri-eye-line"></i> 6.6k</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD-12 -->
+
+            <article class="card">
+
+                <div class="cardImage">
+
+                    <img src="./assets/sample_pack.webp" alt="Crypto UI">
+
+                    <div class="overlay">
+
+                        <div class="overlayContent">
+
+                            <h3>Free Sample Pack|u......</h3>
+
+                            <div class="overlayIcons">
+
+                                <button>
+                                    <i class="ri-heart-3-line"></i>
+                                </button>
+
+                                <button>
+                                    <i class="ri-bookmark-line"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="cardBottom">
+
+                    <div class="profile">
+
+                        <img src="./assets/img12.webp" alt="Designer">
+
+                        <h4>Ulysses Design Co.</h4>
+
+                        <span>PRO</span>
+
+                    </div>
+
+
+
+                    <div class="stats">
+
+                        <span><i class="ri-heart-3-line"></i> 31</span>
+
+                        <span><i class="ri-eye-line"></i> 6.6k</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+        </div>
+
+    </section>
+
+    <!-- SIGN UP-SECTION -->
+
+    <section class="signUp">
+        <button>Sign up to continue</button>
+        <i class="ri-arrow-up-circle-fill"></i>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer" id="blog">
+
+        <!-- MARQUEE -->
+
+        <div class="logoMarquee">
+
+            <div class="logoTrack">
+
+                <img src="./assets/logo1.png" alt="">
+                <img src="./assets/logo2.png" alt="">
+                <img src="./assets/logo3.png" alt="">
+                <img src="./assets/logo4.png" alt="">
+                <img src="./assets/logo5.png" alt="">
+                <img src="./assets/logo6.png" alt="">
+
+                <!-- DUPLICATE -->
+
+                <img src="./assets/logo1.png" alt="">
+                <img src="./assets/logo2.png" alt="">
+                <img src="./assets/logo3.png" alt="">
+                <img src="./assets/logo4.png" alt="">
+                <img src="./assets/logo5.png" alt="">
+                <img src="./assets/logo6.png" alt="">
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOTER TOP -->
+
+        <div class="footerTop">
+
+            <div class="footerLogo">
+                <img src="./assets/dribbble_logo.webp" alt="dribbble_logo">
+            </div>
+
+
+
+            <div class="footerLinks">
+
+                <a href="#">For designers</a>
+                <a href="#">Hire talent</a>
+                <a href="#">Inspiration</a>
+                <a href="#">Advertising</a>
+                <a href="#">Blog</a>
+                <a href="#">Support</a>
+
+            </div>
+
+
+
+            <div class="socialIcons">
+
+                <i class="ri-twitter-x-line"></i>
+                <i class="ri-instagram-line"></i>
+                <i class="ri-facebook-circle-line"></i>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footerBottom">
+
+            <div class="footerBottomLeft">
+
+                <p>&copy; 2026 Dribbble Clone</p>
+
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Cookies</a>
+
+            </div>
+
+
+
+            <div class="footerBottomRight">
+
+                <a href="#">Jobs</a>
+                <a href="#">Designers</a>
+                <a href="#">Freelancers</a>
+                <a href="#">Places</a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
