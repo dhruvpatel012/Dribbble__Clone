@@ -846,15 +846,16 @@ a {
     gap: 1rem;
 }
 
-.socialIcons i {
+.socialIcons a{
     font-size: 1.5rem;
+    color: black;
 
     cursor: pointer;
 
     transition: 0.4s;
 }
 
-.socialIcons i:hover {
+.socialIcons a:hover {
     color: #ea4c89;
 
     transform: translateY(-5px);
