@@ -115,9 +115,10 @@ a {
     opacity: 1;
     visibility: visible;
 }
+
 /* NAVBAR LINKS */
 
-.navbar a{
+.navbar a {
     position: relative;
 
     display: inline-block;
@@ -130,11 +131,11 @@ a {
     transition: color 0.3s ease;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: #ea4c89;
 }
 
-.navbar a::before{
+.navbar a::before {
     content: "";
 
     position: absolute;
@@ -154,7 +155,7 @@ a {
     transition: transform 0.4s ease;
 }
 
-.navbar a:hover::before{
+.navbar a:hover::before {
     transform: scaleX(1);
 }
 
@@ -314,50 +315,73 @@ a {
 }
 
 
-
 /* TRENDING */
 
 .trending {
     margin-top: 2rem;
 
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-
-    flex-wrap: wrap;
+    justify-content: center;
 
     gap: 1rem;
+
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
 
 .trending span {
-    color: #888;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
-.trending button {
+.trendingScroll {
+    display: flex;
+    align-items: center;
+
+    gap: 0.8rem;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    padding-bottom: 4px;
+
+    /* HIDE SCROLLBAR */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer / Edge */
+}
+
+.trendingScroll::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, new Edge */
+}
+
+.trendingScroll button {
     padding: 0.8rem 1rem;
 
     border-radius: 999px;
 
     background-color: #ececec;
+    color: black;
+
+    white-space: nowrap;
+    flex-shrink: 0;
+
 }
 
-.trending button:hover {
+.trendingScroll button:hover {
     background: black;
     color: white;
 }
-
 
 
 /* FILTER */
 
 .filterSection {
     padding: 2rem 1rem;
-
     display: flex;
-
     flex-direction: column;
-
     gap: 2rem;
 }
 
@@ -365,61 +389,81 @@ a {
     width: 100%;
 }
 
-.filterLeft button{
+.filterLeft button {
     width: 100%;
     background-color: rgb(255, 255, 255);
     border: 1px solid black;
-
     box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.668);
 }
 
 .categoryButtons {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    align-items: center;
+    overflow: hidden;
 }
 
-.popularBtn{
-    padding: 0.9rem 1rem;
+.categoryScroll {
+    display: flex;
+    align-items: center;
+     gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 4px;
 
+
+    /* HIDE SCROLLBAR */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.categoryScroll::-webkit-scrollbar {
+    display: none;
+}
+
+.categoryScroll button {
+    padding: 0.9rem 1.3rem;
     border-radius: 999px;
+    background-color: white;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: 0.4s;
+    color: black;
+}
 
-    background: white;
-
+.popularBtn {
+    padding: 0.9rem 1rem;
+    border-radius: 999px;
+    background-color: white;
     font-size: 0.9rem;
-
     transition: 0.4s;
 }
 
-.categoryButtons button,
 .filterBtn {
     padding: 0.9rem 1.3rem;
-
     border-radius: 999px;
-
-    background: white;
-
+    background-color: white;
     font-size: 0.8rem;
-
     transition: 0.4s;
 }
 
-.categoryButtons button:hover,
-.popularBtn:hover,
+.categoryScroll button:hover,
 .filterBtn:hover {
     background-color: black;
     color: white;
-
-    transform: translateY(-3px);
+    transform: translateX(3px);
 }
 
-.popularBtn:hover{
+.popularBtn:hover {
+    background-color: black;
+    color: white;
     box-shadow: 1px 3px 3px rgba(255, 72, 133, 0.804);
+    transform: translateY(-3px);
 }
 
 .activeBtn {
     background-color: black !important;
-    color: white;
+    color: white !important;
 }
 
 
@@ -476,7 +520,7 @@ a {
     transform: scale(1.08);
 }
 
-.cardImage video{
+.cardImage video {
     width: 100%;
 }
 
@@ -654,7 +698,7 @@ a {
 
 .signUp {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 100%;
 
     margin-top: 2rem;
@@ -682,6 +726,7 @@ a {
 .signUp i {
     font-size: 3rem;
     transition: all 0.3s ease;
+    color: black;
 }
 
 .signUp i:hover {
@@ -707,6 +752,8 @@ a {
     overflow: hidden;
 
     margin-bottom: 3rem;
+
+    cursor: pointer;
 }
 
 .logoTrack {
@@ -715,7 +762,7 @@ a {
     display: flex;
     align-items: center;
 
-    animation: marquee 30s linear infinite;
+    animation: marquee 20s linear infinite;
 }
 
 /* ANIMATION */
@@ -727,14 +774,23 @@ a {
     }
 
     to {
-        transform: translateX(-60%);
+        transform: translateX(-50%);
     }
 
 }
 
+
+/* PAUSE ON HOVER */
+.logoMarquee:hover .logoTrack {
+    animation-play-state: paused;
+}
+
+
 .logoTrack img {
-    height:170px;
+    height: 190px;
+    width: auto;
     object-fit: contain;
+    margin: 0 -40px;
 }
 
 
@@ -746,12 +802,14 @@ a {
     flex-direction: column;
     align-items: center;
 
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .footerLogo img {
     width: 130px;
     height: 70px;
+
+    cursor: pointer;
 }
 
 .footerLinks {
@@ -828,11 +886,13 @@ a {
     cursor: pointer;
 }
 
-.footerBottom a ,.footerBottomLeft p{
+.footerBottom a,
+.footerBottomLeft p {
     color: #777;
     transition: all 0.3s ease;
 }
 
-.footerBottom a:hover , .footerBottomLeft p:hover{
+.footerBottom a:hover,
+.footerBottomLeft p:hover {
     color: rgb(200, 24, 138);
 }

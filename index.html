@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -23,7 +23,7 @@
 
     <!-- NAVBAR -->
 
-    <header class="header">
+    <header class="header" id="nav">
 
         <!-- Logo -->
 
@@ -132,12 +132,14 @@
 
             <span>Trending searches</span>
 
-            <button>landing page</button>
-            <button>e-commerce</button>
-            <button>mobile app</button>
-            <button>logo design</button>
-            <button>dashboard</button>
-            <button>icons</button>
+            <div class="trendingScroll">
+                <button>landing page</button>
+                <button>e-commerce</button>
+                <button>mobile app</button>
+                <button>logo design</button>
+                <button>dashboard</button>
+                <button>icons</button>
+            </div>
 
         </div>
 
@@ -162,14 +164,16 @@
 
         <div class="categoryButtons">
 
-            <button class="activeBtn">Discover</button>
-            <button>Animation</button>
-            <button>Branding</button>
-            <button>Illustration</button>
-            <button>Mobile</button>
-            <button>Print</button>
-            <button>Typography</button>
-            <button>Web Design</button>
+            <div class="categoryScroll">
+                <button class="activeBtn">Discover</button>
+                <button>Animation</button>
+                <button>Branding</button>
+                <button>Illustration</button>
+                <button>Mobile</button>
+                <button>Print</button>
+                <button>Typography</button>
+                <button>Web Design</button>
+            </div>
 
         </div>
 
@@ -261,7 +265,7 @@
 
                 <div class="cardImage">
 
-                    <video src="./assets/video.mp4" loop muted autoplay ></video>
+                    <video src="./assets/video.mp4" loop muted autoplay></video>
 
                     <div class="overlay">
 
@@ -934,7 +938,9 @@
 
         <button>Sign up to continue</button>
 
-        <i class="ri-arrow-up-circle-fill"></i>
+        <a href="#nav">
+            <i class="ri-arrow-up-circle-fill" id="nav"></i>
+        </a>
 
     </section>
 
@@ -1019,8 +1025,6 @@
                 <a href="#">Cookies</a>
 
             </div>
-
-
 
             <div class="footerBottomRight">
 
